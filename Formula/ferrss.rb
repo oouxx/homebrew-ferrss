@@ -1,17 +1,17 @@
 class Ferrss < Formula
   desc "AI-driven CLI tool that turns websites into command-line interfaces"
   homepage "https://github.com/oouxx/Ferrss"
-  version "0.3.12"
+  version "0.3.13"
   license "Apache-2.0"
 
   on_arm do
-    url "https://github.com/oouxx/Ferrss/releases/download/v0.3.12/ferrss-aarch64-apple-darwin.tar.gz"
-    sha256 "285ef5239cdf90def6aaf1db2d0f5a4149cc0e1d154ac867a62766d9bf11b03d"
+    url "https://github.com/oouxx/Ferrss/releases/download/v0.3.13/ferrss-aarch64-apple-darwin.tar.gz"
+    sha256 "c8b6ead70b6ba18cdaaf8f3752a4e53991d7636bfef184fc104c66925c761017"
   end
 
   on_intel do
-    url "https://github.com/oouxx/Ferrss/releases/download/v0.3.12/ferrss-x86_64-apple-darwin.tar.gz"
-    sha256 "cd052ea723cf7c3d4de251f3da5ae4651774e1b055704c6c04644f065f444ab4"
+    url "https://github.com/oouxx/Ferrss/releases/download/v0.3.13/ferrss-x86_64-apple-darwin.tar.gz"
+    sha256 "d49790d9f594b2944f1c6afbee484c6abdc10ef0f5e61d9c4c439811a2332b3b"
   end
 
   def install

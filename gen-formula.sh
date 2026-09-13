@@ -10,7 +10,7 @@ OUT="$(cd "$(dirname "$0")" && pwd)/Formula/ferrss.rb"
 BASE="https://github.com/${REPO}/releases/download/v${VERSION}"
 
 echo "Fetching SHA256SUMS.txt for v${VERSION}..."
-SUMS="$(curl -fsSL "${BASE}/SHA256SUMS.txt")"
+SUMS="$(curl -fsSL --http1.1 "${BASE}/SHA256SUMS.txt")"
 
 sum_for() {
   echo "$SUMS" | awk -v f="$1" '$2 == f { print $1 }'
